@@ -1,0 +1,17 @@
+<div id="app"></div>
+
+
+<script src="/jspm_packages/system.js"></script>
+<script src="/jspm.config.js"></script>
+<script>
+
+    System.import('js/Hello.js').then( function ( module ) {
+        new module.default({
+            el: '#app',
+            data: {
+                name: '{{name}}'
+            }
+        });
+    });
+
+</script>

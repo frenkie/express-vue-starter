@@ -1,0 +1,33 @@
+{
+  "name": "express-vue-starter",
+  "version": "0.1.0",
+  "dependencies": {
+    "debug": "~2.6.0",
+    "express": "~4.14.0",
+    "express-handlebars": "~3.0.0",
+    "jspm": "~0.17.0-beta.32"
+  },
+  "devDependencies": {
+    "nodemon": "~1.11.0"
+  },
+  "jspm": {
+    "name": "express-vue-starter",
+    "directories": {
+      "baseURL": "app"
+    },
+    "dependencies": {
+      "text": "github:systemjs/plugin-text@^0.0.9",
+      "vue": "npm:vue@^2.1.8"
+    },
+    "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.18"
+    },
+    "peerDependencies": {
+      "process": "npm:jspm-nodelibs-process@^0.2.0"
+    }
+  },
+  "scripts": {
+    "debug": "DEBUG=yourapp nodemon ./server.js",
+    "postinstall": "jspm install"
+  }
+}
